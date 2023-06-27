@@ -1,9 +1,9 @@
 import { LinksList } from './LinksList/LinksList'
+import { LinkSocialMedia } from './LinksList/LinkSocialMedia/LinkSocialMedia'
 
 import {mainLinks, casesLinks, materialsLinks} from './LinksList/listsOfLinks'
 import Image from 'next/image'
-import logo from '@/assets/logo.png'
-import { LinkSocialMedia } from './LinksList/LinkSocialMedia/LinkSocialMedia'
+import animatedLogo from '@/assets/leadster_270.gif'
 
 export function HomeFooter() {
   return (
@@ -11,7 +11,7 @@ export function HomeFooter() {
       <div className="max-w-6xl mx-auto">
 
         <div className='flex flex-col gap-2 items-center'>
-          <Image src={logo} alt='Logo Leadster' />
+          <Image src={animatedLogo} alt='Logo Leadster' />
           <p className='text-gray text-xs'>
             Transformando visitantes em clientes.
           </p>
