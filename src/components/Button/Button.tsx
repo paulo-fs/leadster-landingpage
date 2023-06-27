@@ -23,7 +23,7 @@ export function Button(buttonProps: ButtonProps) {
   )
 
   return (
-    <button {...props} className='bg-blue-main hover:bg-black text-white font-semibold text-lg transition rounded-full py-3 px-6 disabled:bg-gray uppercase'>
+    <button {...props} className='bg-blue-main hover:bg-black text-white font-semibold text-lg transition rounded-full py-5 px-8 disabled:bg-gray uppercase'>
       {children}
     </button>
   )
