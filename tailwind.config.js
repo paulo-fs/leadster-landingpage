@@ -16,10 +16,32 @@ module.exports = {
         background: '#F0F8FF',
       },
       black: '#1C3C50',
-      gray: '#627397',
+      gray: '#858da8',
       white: '#fff',
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        h1: '4.5rem',
+        h2: '2.1rem',
+        h3: '2.4rem',
+      },
+      width: {
+        card: '22.5rem',
+      },
+      maxWidth: {
+        card: '22.5rem',
+        '8xl': '92rem',
+      },
+      height: {
+        card: '18.12rem',
+      },
+      maxHeight: {
+        card: '18.12rem',
+      },
+      margin: {
+        18: '4.5rem',
+      },
+    },
   },
   plugins: [],
 }
