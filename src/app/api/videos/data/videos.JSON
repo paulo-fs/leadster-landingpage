@@ -1,0 +1,298 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Os passos do Marketing Digital para Startups (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=gK8uPCkka7c",
+      "topic": "digitalMarketing",
+      "date": "2022-01-01"
+    },
+    {
+      "id": "2",
+      "title": "Referências para Startups: Livros, Cursos e Profissionais",
+      "url": "https://www.youtube.com/watch?v=uKlBCWtbw9w",
+      "topic": "digitalMarketing",
+      "date": "2021-05-01"
+    },
+    {
+      "id": "3",
+      "title": "Startups: O que fazer após captar os primeiros clientes?",
+      "url": "https://www.youtube.com/watch?v=n6x4blVLYP4",
+      "topic": "digitalMarketing",
+      "date": "2023-02-01"
+    },
+    {
+      "id": "4",
+      "title": "Model-Market Fit: Os tipos de cliente que sua empresa pode atender",
+      "url": "https://www.youtube.com/watch?v=y8U2omuF3aM",
+      "topic": "digitalMarketing",
+      "date": "2023-05-10"
+    },
+    {
+      "id": "5",
+      "title": "Model-Channel Fit: Entenda em quais canais atuar a partir do seu Modelo de Negócio",
+      "url": "https://www.youtube.com/watch?v=TNO96OtJo0o",
+      "topic": "digitalMarketing",
+      "date": "2023-02-01"
+    },
+    {
+      "id": "6",
+      "title": "Product-Channel Fit: Como distribuir o seu produto no mercado?",
+      "url": "https://www.youtube.com/watch?v=_rCJ4QzYllo",
+      "topic": "digitalMarketing",
+      "date": "2023-03-01"
+    },
+    {
+      "id": "7",
+      "title": "Product-Market Fit: O que é e por que sua Startup precisa dele para sobreviver?",
+      "url": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4",
+      "topic": "digitalMarketing",
+      "date": "2023-05-05"
+    },
+    {
+      "id": "8",
+      "title": "Mercado, Produto, Modelo e Canais - O Mix de variáveis do Marketing Digital",
+      "url": "https://www.youtube.com/watch?v=aT88TbvdPEY",
+      "topic": "digitalMarketing",
+      "date": "2021-05-01"
+    },
+    {
+      "id": "9",
+      "title": "Estratégias de curto e longo prazo no Marketing Digital",
+      "url": "https://www.youtube.com/watch?v=PHAfkczqlMY",
+      "topic": "digitalMarketing",
+      "date": "2022-10-01"
+    },
+    {
+      "id": "10",
+      "title": "Como surgiu a Leadster e os desafios de Empreender na área de Tecnologia",
+      "url": "https://www.youtube.com/watch?v=eGIQT6AdvS8",
+      "topic": "digitalMarketing",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "11",
+      "title": "A importância do Benchmark e Networking na estratégia de Marketing Digital",
+      "url": "https://www.youtube.com/watch?v=EW6QAM4ypVE",
+      "topic": "digitalMarketing",
+      "date": "2023-04-01"
+    },
+    {
+      "id": "12",
+      "title": "Captação de Leads e Atendimento - Os Desafios no Digital (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=Qa4U7K3Mou8",
+      "topic": "digitalMarketing",
+      "date": "2023-01-01"
+    },
+    {
+      "id": "13",
+      "title": "Quão grande é o mercado de Mídia Paga? Benchmark global",
+      "url": "https://www.youtube.com/watch?v=0YcfScAr0DM",
+      "topic": "paidMedia",
+      "date": "2023-05-10"
+    },
+    {
+      "id": "14",
+      "title": "Quanto investir em Mídia Paga? A pergunta de MILHÕES",
+      "url": "https://www.youtube.com/watch?v=GcvZ9dWhRks",
+      "topic": "paidMedia",
+      "date": "2023-05-03"
+    },
+    {
+      "id": "15",
+      "title": "Os MAIORES MITOS sobre a Mídia Paga!",
+      "url": "https://www.youtube.com/watch?v=cn4xC_i_wYc",
+      "topic": "paidMedia",
+      "date": "2023-01-05"
+    },
+    {
+      "id": "16",
+      "title": "Como usar a Matriz de Gestão sustentável de Mídia Paga para otimizar...",
+      "url": "https://www.youtube.com/watch?v=IFp-knMwLqo",
+      "topic": "paidMedia",
+      "date": "2023-02-05"
+    },
+    {
+      "id": "17",
+      "title": "'Low-Hanging Fruits' no Meta Ads - Pequenas otimizações que geram...",
+      "url": "https://www.youtube.com/watch?v=iyeqHPknxbE",
+      "topic": "paidMedia",
+      "date": "2023-01-01"
+    },
+    {
+      "id": "18",
+      "title": "Como escolher o melhor canal de Mídia Paga para o seu negócio?",
+      "url": "https://www.youtube.com/watch?v=nR_3qSvL6bM",
+      "topic": "paidMedia",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "19",
+      "title": "Como criar anúncios efetivos no Meta Ads / Facebook Ads?",
+      "url": "https://www.youtube.com/watch?v=XAakjkrMHOs",
+      "topic": "paidMedia",
+      "date": "2022-08-01"
+    },
+    {
+      "id": "20",
+      "title": "Como construir audiências de qualidade no Meta Ads / Facebook Ads?",
+      "url": "https://www.youtube.com/watch?v=HrWHsZXFaVM",
+      "topic": "paidMedia",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "21",
+      "title": "Diferença entre palavras-chave de short e long tail no Google Ads",
+      "url": "https://www.youtube.com/watch?v=KiLNo90ajxM",
+      "topic": "paidMedia",
+      "date": "2022-09-01"
+    },
+    {
+      "id": "22",
+      "title": "Conheça as principais plataformas de Marketing Conversacional",
+      "url": "https://www.youtube.com/watch?v=yju8RTdhHQ0",
+      "topic": "chatBot",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "23",
+      "title": "O Marketing Conversacional funciona em todos os segmentos de negócio?",
+      "url": "https://www.youtube.com/watch?v=VZoPJxdu20c",
+      "topic": "chatBot",
+      "date": "2023-02-01"
+    },
+    {
+      "id": "24",
+      "title": "Qual é a diferença entre Marketing Digital, Marketing Conversacional e Marketing...",
+      "url": "https://www.youtube.com/watch?v=jmZv8kDH8fg",
+      "topic": "chatBot",
+      "date": "2023-04-01"
+    },
+    {
+      "id": "25",
+      "title": "Como usar a inteligência artificial nos negócios?",
+      "url": "https://www.youtube.com/watch?v=lzuB5jLaLWc",
+      "topic": "chatBot",
+      "date": "2022-01-01"
+    },
+    {
+      "id": "26",
+      "title": "Como usar a inteligência artificial para criar ações e campanhas de marketing?",
+      "url": "https://www.youtube.com/watch?v=UYg36xAU_vU",
+      "topic": "chatBot",
+      "date": "2022-05-01"
+    },
+    {
+      "id": "27",
+      "title": "O ChatGPT vai automatizar o trabalho do Copywriter?",
+      "url": "https://www.youtube.com/watch?v=GZyDCW-F69I",
+      "topic": "chatBot",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "28",
+      "title": "Como treinar uma inteligência artificial?",
+      "url": "https://www.youtube.com/watch?v=9RcQumcluZI",
+      "topic": "chatBot",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "29",
+      "title": "Ferramentas de inteligência artificial para facilitar o dia a dia",
+      "url": "https://www.youtube.com/watch?v=tdAO27BciFk",
+      "topic": "chatBot",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "30",
+      "title": "Como saber de onde vêm os leads em um futuro sem cookies?",
+      "url": "https://www.youtube.com/watch?v=cywm2tV1BCQ",
+      "topic": "leads",
+      "date": "2023-03-01"
+    },
+    {
+      "id": "31",
+      "title": "Por que você perde 60% dos leads usando formulários de contato no site?",
+      "url": "https://www.youtube.com/watch?v=0gma7MHghnM",
+      "topic": "leads",
+      "date": "2023-04-01"
+    },
+    {
+      "id": "32",
+      "title": "Captação de Leads e Atendimento - Os Desafios no Digital (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=Qa4U7K3Mou8",
+      "topic": "leads",
+      "date": "2021-05-01"
+    },
+    {
+      "id": "33",
+      "title": "O Segredo para Captar a Atenção do seu Visitante (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=qD85tfFsx6Y",
+      "topic": "leads",
+      "date": "2022-05-01"
+    },
+    {
+      "id": "34",
+      "title": "Pesquisa de Palavras-Chave para Geração de Leads (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=B22DmL82PrA",
+      "topic": "leads",
+      "date": "2023-03-01"
+    },
+    {
+      "id": "35",
+      "title": "Como aumentar a Geração de Leads Qualificados do seu Site",
+      "url": "https://www.youtube.com/watch?v=9L9ZkGX1p_k",
+      "topic": "leads",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "36",
+      "title": "Mídia Paga: O que Aprendemos Investindo 383 mil reais (Webinar completo)",
+      "url": "https://www.youtube.com/watch?v=tdZQHWht-ZI",
+      "topic": "agency",
+      "date": "2023-04-01"
+    },
+    {
+      "id": "37",
+      "title": "Como integrar a Leadster ao CRM PipeRun",
+      "url": "https://www.youtube.com/watch?v=uWSCOBUXr18",
+      "topic": "agency",
+      "date": "2023-05-01"
+    },
+    {
+      "id": "38",
+      "title": "O que Fazer com 97% dos Leads que não Estão Prontos pra Comprar? ",
+      "url": "https://www.youtube.com/watch?v=BQ-Mh8NGapM",
+      "topic": "agency",
+      "date": "2023-01-01"
+    },
+    {
+      "id": "39",
+      "title": "Integração entre Leadster & Fleeg",
+      "url": "https://www.youtube.com/watch?v=jNxp2hwuFD0",
+      "topic": "agency",
+      "date": "2022-05-01"
+    },
+    {
+      "id": "40",
+      "title": "O que fazer se os eventos de conversao da Leadster aparecerem no GA4",
+      "url": "https://www.youtube.com/watch?v=juO5wXxF4c8",
+      "topic": "agency",
+      "date": "2021-05-01"
+    },
+    {
+      "id": "41",
+      "title": "Como funciona a aba de leads da minha Dashboard?",
+      "url": "https://www.youtube.com/watch?v=8SnTGZ8soWI",
+      "topic": "agency",
+      "date": "2023-01-01"
+    },
+    {
+      "id": "42",
+      "title": "Como realizo uma integração com outra plataforma?",
+      "url": "https://www.youtube.com/watch?v=y_UtXEQvtxA",
+      "topic": "agency",
+      "date": "2023-02-01"
+    }
+  ]
+}
