@@ -1,5 +1,8 @@
 import { HomeFooter, HomeHeader } from '@/components'
-import { CTA, Hero, VideosSection } from './sections'
+import { Hero } from './sections/Hero/Hero'
+import { VideosSection } from './sections/Videos/Videos'
+import { CTA } from './sections/CTA/CTA'
+
 
 export default function Home() {
   return (
