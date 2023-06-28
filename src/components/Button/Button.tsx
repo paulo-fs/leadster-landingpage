@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button(buttonProps: ButtonProps) {
   const { primary = false, isActive = false, children, ...props } = buttonProps
 
-  const secondaryBase = `bg-white active:bg-blue-main border border-black disabled:border-gray rounded-full text-sm text-black active:text-white py-2 px-4
+  const secondaryBase = `active:bg-blue-main border border-black disabled:border-gray rounded-full text-sm text-black active:text-white py-2 px-4
   ${isActive && 'bg-blue-main text-white hover:text-white border-blue-main'}
 `
   const secondaryHover = 'hover:border-blue-main hover:text-blue-main transition'
