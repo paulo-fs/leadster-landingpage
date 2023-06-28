@@ -1,9 +1,11 @@
+
 import { CardVideo } from '@/components'
 import { Navigation } from './Navigation/Navigation'
 import { Pagination } from './Pagination/Pagination'
+import { useVideoRequest } from '@/services'
 
-export function VideosSection() {
-  const amount = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+export async function VideosSection() {
+  const { videos } = await useVideoRequest()
 
   return (
     <section className='w-full max-w-6xl mx-auto pt-24 pb-20'>
@@ -11,9 +13,9 @@ export function VideosSection() {
 
       <div className='border-y border-gray border-opacity-70 py-16 my-10'>
         <div className='grid grid-cols-3 gap-8'>
-          {amount.map((item) => {
+          {videos && videos.map((item) => {
             return (
-              <CardVideo key={item} />
+              <CardVideo key={item.id} title={item.title} />
             )
           })}
         </div>
