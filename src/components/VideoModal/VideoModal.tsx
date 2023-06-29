@@ -2,7 +2,9 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Dialog } from '@headlessui/react'
 import ReactPlayer from 'react-player/lazy'
+import { Player } from '@lottiefiles/react-lottie-player';
 import { ButtonDownload } from "../ButtonDownload/ButtonDownload";
+import loadingAnimation from '@/assets/Loading-2.json'
 
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { IVideoInfos } from "@/store/videosStore";
@@ -20,6 +22,7 @@ interface VideoModalProps {
 }
 export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps) {
   const [mounted, setMounted] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => setMounted(true), [])
 
@@ -34,13 +37,24 @@ export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps)
             {videoInfos.title}
           </Dialog.Title>
 
-          <div className="w-full">
+          <div className="w-full relative">
             <ReactPlayer
               url={videoInfos.url}
               width='100%'
               controls
               stopOnUnmount
+              onReady={() => setIsLoading(false)}
             />
+            {isLoading && (
+              <div className="fixed inset-64">
+                <Player
+                  autoplay
+                  loop
+                  style={{ width: '300px', height: '300px' }}
+                  src={loadingAnimation}
+                />
+              </div>
+            )}
           </div>
 
           <div className="px-6 py-8">
