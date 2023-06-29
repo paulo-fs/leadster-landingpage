@@ -14,6 +14,10 @@ export function VideosSection() {
     handleModal,
     videoInfos,
     handleSetVideoModalInfos,
+    pagesCount,
+    videosPerPage,
+    page,
+    setPage,
   } = videosController()
 
   return (
@@ -27,7 +31,9 @@ export function VideosSection() {
 
       <div className='border-y border-gray border-opacity-70 py-16 my-10'>
         <div className='grid grid-cols-3 gap-8'>
-          {allVideos && (filteredVideos || allVideos).map((item) => {
+          {allVideos && (filteredVideos || allVideos)
+            .slice((page - 1) * videosPerPage, (page - 1) * videosPerPage + videosPerPage)
+            .map((item) => {
             return (
               <CardVideo key={item.id} title={item.title}
                 onClick={() => handleSetVideoModalInfos({
@@ -43,7 +49,11 @@ export function VideosSection() {
       </div>
 
       <div className='w-full grid place-content-center'>
-        <Pagination />
+        <Pagination
+          count={pagesCount}
+          changePage={setPage}
+          activePage={page}
+        />
       </div>
     </section>
   )

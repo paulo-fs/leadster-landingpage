@@ -1,16 +1,38 @@
 import { ButtonPage } from '@/components'
 
-export function Pagination() {
+interface PaginationProps {
+  count: number
+  changePage: (page: number) => void
+  activePage: number
+}
+
+export function Pagination(componentProps: PaginationProps) {
+  const {
+    count,
+    changePage,
+    activePage,
+  } = componentProps
+
+  const pages = []
+  for(let i = 1; i < count + 1; i++) {
+    pages.push(i)
+  }
+
   return (
     <div className='flex items-center'>
       <span className='font-bold text-lg text-black mr-4'>
         Página
       </span>
 
-      <ButtonPage page='1' />
-      <ButtonPage page='2' />
-      <ButtonPage page='3' />
-      <ButtonPage page='4' isActive />
+      {pages.map(page => {
+        return (
+          <ButtonPage
+            page={page.toString()}
+            isActive={activePage === page}
+            onClick={() => changePage(page)}
+          />
+        )
+      })}
     </div>
   )
 }

@@ -11,9 +11,15 @@ export function videosController() {
     allVideos,
     videoInfos,
     setVideoInfos,
+    page,
+    setPage,
+    videosPerPage
   } = useVideoStore()
 
   const [isOpenModal, setIsOpenModal] = useState(false)
+
+  const calcPagesCount = Math.floor((filteredVideos?.length || allVideos?.length || 1) / videosPerPage)
+  const pagesCount = calcPagesCount === 0 ? 1 : calcPagesCount
 
   function handleModal() {
     setIsOpenModal(!isOpenModal)
@@ -42,5 +48,9 @@ export function videosController() {
     handleModal,
     videoInfos,
     handleSetVideoModalInfos,
+    pagesCount,
+    videosPerPage,
+    page,
+    setPage,
   }
 }
