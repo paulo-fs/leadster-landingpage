@@ -1,8 +1,9 @@
-import { IVideoData, Topics } from '@/dataTypes/videos.dto'
+import { IVideoData, OrderBy, Topics } from '@/dataTypes/videos.dto'
+import { sortVideos } from '@/helpers/sortVideos'
 import { create } from 'zustand'
 
 interface VideoStoreProps {
-  orderBy: string
+  orderBy: OrderBy
   selectedTopic: Topics
   filteredVideos: IVideoData[] | null
   allVideos: IVideoData[] | null
@@ -16,6 +17,7 @@ interface VideoStoreProps {
   setVideoInfos: (data: IVideoInfos) => void
 
   setPage: (page: number) => void
+  changeOrder: (order: OrderBy) => void
 }
 
 export interface IVideoInfos {
@@ -26,7 +28,7 @@ export interface IVideoInfos {
 }
 
 const initialState = {
-  orderBy: 'date',
+  orderBy: OrderBy.DATE,
   selectedTopic: Topics.ALL,
   filteredVideos: null,
   allVideos: null,
@@ -45,7 +47,9 @@ export const useVideoStore = create<VideoStoreProps>((set, get) => ({
   ...initialState,
 
   setVideos: (videos: IVideoData[]) => {
-    set({ allVideos: videos })
+    const {orderBy} = get()
+    const orderedBy = sortVideos(videos, orderBy)
+    set({ allVideos: orderedBy })
   },
 
   setTopic: (topic: Topics) => {
@@ -65,5 +69,12 @@ export const useVideoStore = create<VideoStoreProps>((set, get) => ({
 
   setPage: (page) => {
     set({ page: page })
+  },
+
+  changeOrder: (order) => {
+    const {filteredVideos, orderBy, allVideos} = get()
+    set({ orderBy: order })
+    const orderedBy = sortVideos(filteredVideos || allVideos, orderBy)
+    set({ filteredVideos: orderedBy})
   }
 }))

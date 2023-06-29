@@ -30,6 +30,7 @@ export function Pagination(componentProps: PaginationProps) {
             page={page.toString()}
             isActive={activePage === page}
             onClick={() => changePage(page)}
+            key={page}
           />
         )
       })}

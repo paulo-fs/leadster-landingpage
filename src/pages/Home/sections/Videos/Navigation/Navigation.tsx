@@ -1,4 +1,4 @@
-import { Button } from '@/components'
+import { Button, SelectBox } from '@/components'
 import { Topics } from '@/dataTypes/videos.dto'
 
 interface NavigationProps {
@@ -51,7 +51,8 @@ export function Navigation({ setTopic, selectedTopic }: NavigationProps) {
 
       <div className='flex gap-4 items-center'>
         <span>Ordenar por:</span>
-        <input placeholder='Data de publicação' className='border rounded-md px-4 py-1' />
+        {/* <input placeholder='Data de publicação' className='border rounded-md px-4 py-1' /> */}
+        <SelectBox />
       </div>
     </div>
   )

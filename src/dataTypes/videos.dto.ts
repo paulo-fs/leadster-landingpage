@@ -14,3 +14,8 @@ export enum Topics {
   DIGITALMARKETING = 'digitalMarketing',
   ALL = 'all',
 }
+
+export enum OrderBy {
+  DATE = 'date',
+  TITLE = 'title'
+}
