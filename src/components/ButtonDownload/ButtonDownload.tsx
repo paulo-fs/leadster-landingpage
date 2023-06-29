@@ -41,7 +41,7 @@ const colorSchema = {
 
 export function ButtonDownload({type, ...props}: ButtonDownloadProps) {
   return (
-    <button {...props} className="h-8 flex items-center">
+    <button {...props} className="h-8 flex items-center hover:opacity-70 transition">
       <div className={`h-full w-8 grid place-content-center rounded-s ${colorSchema[type].BGmedium}`}>
         <IconCloud className={`w-4 h-4 ${colorSchema[type].StrokeDark}`} />
       </div>
