@@ -27,6 +27,7 @@
     "zustand": "^4.3.8"
   },
   "devDependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "eslint-plugin-react": "^7.32.2"
