@@ -34,17 +34,17 @@ export function VideosSection() {
           {allVideos && (filteredVideos || allVideos)
             .slice((page - 1) * videosPerPage, (page - 1) * videosPerPage + videosPerPage)
             .map((item) => {
-            return (
-              <CardVideo key={item.id} title={item.title}
-                onClick={() => handleSetVideoModalInfos({
-                  title: item.title,
-                  description: null,
-                  isWebnar: item.topic === Topics.DIGITALMARKETING || item.topic === Topics.LEADS,
-                  url: item.url
-                })}
-              />
-            )
-          })}
+              return (
+                <CardVideo key={item.id} title={item.title}
+                  onClick={() => handleSetVideoModalInfos({
+                    title: item.title,
+                    description: null,
+                    isWebnar: item.topic === Topics.DIGITALMARKETING || item.topic === Topics.LEADS,
+                    url: item.url
+                  })}
+                />
+              )
+            })}
         </div>
       </div>
 
