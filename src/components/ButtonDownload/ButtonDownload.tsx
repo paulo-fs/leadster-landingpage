@@ -5,13 +5,6 @@ interface ButtonDownloadProps extends HTMLAttributes<HTMLButtonElement> {
   type: 'Spreadsheet.xls' | 'Document.doc' | 'Presentation.ppt' | 'Folder.zip'
 }
 
-enum ButtonType {
-  SPREADSHEET = 'Spreadsheet.xls',
-  DOCUMENT = 'Document.doc',
-  PRESENTATION = 'Presentation.ppt',
-  FOLDER = 'Folder.zip'
-}
-
 const colorSchema = {
   'Spreadsheet.xls': {
     BGlight: 'bg-green-buttonLight',

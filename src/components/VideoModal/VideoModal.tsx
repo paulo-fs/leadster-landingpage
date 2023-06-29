@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player/lazy'
 import { ButtonDownload } from "../ButtonDownload/ButtonDownload";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { IVideoInfos } from "@/store/videosStore";
 
 export const jackarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -15,9 +16,9 @@ export const jackarta = Plus_Jakarta_Sans({
 interface VideoModalProps {
   handleModal: Dispatch<SetStateAction<boolean>>
   isOpen: boolean
-  videoUrl: string
+  videoInfos: IVideoInfos
 }
-export function VideoModal({ handleModal, isOpen, videoUrl }: VideoModalProps) {
+export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps) {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
@@ -28,13 +29,14 @@ export function VideoModal({ handleModal, isOpen, videoUrl }: VideoModalProps) {
 
       <div className="fixed inset-0 flex items-center justify-center p-4">
         <Dialog.Panel  className="mx-auto max-w-xl rounded-2xl bg-white">
-          <Dialog.Title className='py-9 px-32 text-lg font-medium'>
-            <span className="text-blue-main">Webinar: </span>Deactivate account
+          <Dialog.Title className='py-9 px-20 text-lg font-medium'>
+            <span className="text-blue-main">{videoInfos.isWebnar && 'Webinar:'} </span>
+            {videoInfos.title}
           </Dialog.Title>
 
           <div className="w-full">
             <ReactPlayer
-              url={videoUrl}
+              url={videoInfos.url}
               width='100%'
               controls
               stopOnUnmount
@@ -62,12 +64,12 @@ export function VideoModal({ handleModal, isOpen, videoUrl }: VideoModalProps) {
           </div>
         </Dialog.Panel>
 
-        <div className="fixed bottom-0 left-0 bg-white p-6 flex flex-col gap-3">
+        <Dialog.Panel className="fixed bottom-0 left-0 bg-white p-6 flex flex-col gap-3">
           <ButtonDownload type='Spreadsheet.xls' />
           <ButtonDownload type='Document.doc' />
           <ButtonDownload type='Presentation.ppt' />
           <ButtonDownload type='Folder.zip' />
-        </div>
+        </Dialog.Panel>
       </div>
     </Dialog>
   )

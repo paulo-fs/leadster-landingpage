@@ -1,13 +1,32 @@
 import { getVideos } from "@/services"
-import { useVideoStore } from "@/store/videosStore"
-import { useEffect } from "react"
+import { IVideoInfos, useVideoStore } from "@/store/videosStore"
+import { useEffect, useState } from "react"
 
 export function videosController() {
-  const {filteredVideos, setTopic, selectedTopic, setVideos, allVideos} = useVideoStore()
+  const {
+    filteredVideos,
+    setTopic,
+    selectedTopic,
+    setVideos,
+    allVideos,
+    videoInfos,
+    setVideoInfos,
+  } = useVideoStore()
+
+  const [isOpenModal, setIsOpenModal] = useState(false)
+
+  function handleModal() {
+    setIsOpenModal(!isOpenModal)
+  }
 
   async function getData() {
     const { videos } = await getVideos()
     setVideos(videos)
+  }
+
+  function handleSetVideoModalInfos(data: IVideoInfos){
+    setVideoInfos(data)
+    setIsOpenModal(true)
   }
 
   useEffect(() => {
@@ -18,6 +37,10 @@ export function videosController() {
     allVideos,
     filteredVideos,
     setTopic,
-    selectedTopic
+    selectedTopic,
+    isOpenModal,
+    handleModal,
+    videoInfos,
+    handleSetVideoModalInfos,
   }
 }

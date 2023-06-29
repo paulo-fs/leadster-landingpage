@@ -1,10 +1,20 @@
-import { CardVideo } from '@/components'
+import { CardVideo, VideoModal } from '@/components'
 import { Navigation } from './Navigation/Navigation'
 import { Pagination } from './Pagination/Pagination'
 import { videosController } from './Videos.controller'
+import { Topics } from '@/dataTypes/videos.dto'
 
 export function VideosSection() {
-  const { allVideos, filteredVideos, setTopic, selectedTopic } = videosController()
+  const {
+    allVideos,
+    filteredVideos,
+    setTopic,
+    selectedTopic,
+    isOpenModal,
+    handleModal,
+    videoInfos,
+    handleSetVideoModalInfos,
+  } = videosController()
 
   return (
     <section className='w-full bg-white max-w-6xl mx-auto pt-24 pb-20'>
@@ -13,11 +23,20 @@ export function VideosSection() {
         selectedTopic={selectedTopic}
       />
 
+      {isOpenModal && <VideoModal videoInfos={videoInfos} isOpen={isOpenModal} handleModal={handleModal} />}
+
       <div className='border-y border-gray border-opacity-70 py-16 my-10'>
         <div className='grid grid-cols-3 gap-8'>
           {allVideos && (filteredVideos || allVideos).map((item) => {
             return (
-              <CardVideo key={item.id} title={item.title} />
+              <CardVideo key={item.id} title={item.title}
+                onClick={() => handleSetVideoModalInfos({
+                  title: item.title,
+                  description: null,
+                  isWebnar: item.topic === Topics.DIGITALMARKETING || item.topic === Topics.LEADS,
+                  url: item.url
+                })}
+              />
             )
           })}
         </div>
