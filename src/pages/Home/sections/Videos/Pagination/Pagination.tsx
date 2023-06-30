@@ -20,7 +20,7 @@ export function Pagination(componentProps: PaginationProps) {
 
   return (
     <div className='flex items-center'>
-      <span className='font-bold text-lg text-black mr-4'>
+      <span className='font-bold text-sm md:text-lg text-black mr-2 md:mr-4'>
         Página
       </span>
 

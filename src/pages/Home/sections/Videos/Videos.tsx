@@ -21,7 +21,7 @@ export function VideosSection() {
   } = videosController()
 
   return (
-    <section className='w-full bg-white max-w-6xl mx-auto pt-24 pb-20'>
+    <section className='w-full lg:max-w-6xl px-8 xl:px-0 lg:mx-auto pt-8 md:pt-16 lg:pt-24 pb-8 md:pb-16 lg:pb-20'>
       <Navigation
         setTopic={setTopic}
         selectedTopic={selectedTopic}
@@ -29,8 +29,8 @@ export function VideosSection() {
 
       {isOpenModal && <VideoModal videoInfos={videoInfos} isOpen={isOpenModal} handleModal={handleModal} />}
 
-      <div className='border-y border-gray border-opacity-70 py-16 my-10'>
-        <div className='grid grid-cols-3 gap-8'>
+      <div className='border-y border-gray border-opacity-70 py-8 sm:py-12 lg:py-16 my-4 md:my-8 lg:my-10'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8'>
           {allVideos && (filteredVideos || allVideos)
             .slice((page - 1) * videosPerPage, (page - 1) * videosPerPage + videosPerPage)
             .map((item) => {

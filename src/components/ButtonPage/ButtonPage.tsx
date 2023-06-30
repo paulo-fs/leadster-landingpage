@@ -11,7 +11,7 @@ export function ButtonPage(buttonProps: ButtonPageProps) {
 
   return (
     <button {...props} className={`
-      w-11 h-11 text-lg text-black hover:font-bold hover:bg-blue-background rounded-md transition
+      w-8 h-8 md:w-11 md:h-11 text-lg text-black hover:font-bold hover:bg-blue-background rounded-md transition
       ${isActive && 'border border-blue-main text-blue-main font-bold'}
     `}>
       {page}

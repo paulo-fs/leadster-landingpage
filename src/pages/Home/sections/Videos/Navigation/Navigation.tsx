@@ -9,8 +9,8 @@ interface NavigationProps {
 export function Navigation({ setTopic, selectedTopic }: NavigationProps) {
 
   return (
-    <div className='flex items-center justify-between'>
-      <nav className='flex gap-4'>
+    <div className='flex flex-wrap gap-4 items-center justify-center sm:justify-between'>
+      <nav className='flex flex-wrap gap-2 md:gap-4 justify-center'>
         <Button
           isActive={selectedTopic === Topics.AGENCY}
           onClick={() => setTopic(Topics.AGENCY)}

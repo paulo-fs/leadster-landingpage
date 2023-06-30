@@ -1,6 +1,6 @@
-import { getVideos } from "@/services"
-import { IVideoInfos, useVideoStore } from "@/store/videosStore"
-import { useEffect, useState } from "react"
+import { getVideos } from '@/services'
+import { IVideoInfos, useVideoStore } from '@/store/videosStore'
+import { useEffect, useState } from 'react'
 
 export function videosController() {
   const {
