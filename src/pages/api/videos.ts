@@ -1,10 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fsPromises from 'fs/promises'
 import path from 'path'
+import { IVideoData } from '@/dataTypes/videos.dto'
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<any>
+  res: NextApiResponse<IVideoData[]>
 ) {
 
   const filePath = path.join(

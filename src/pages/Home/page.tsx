@@ -1,8 +1,4 @@
-import { HomeFooter, HomeHeader } from '@/components'
-import { Hero } from './sections/Hero/Hero'
-import { VideosSection } from './sections/Videos/Videos'
-import { CTA } from './sections/CTA/CTA'
-
+import { CTA, Hero, HomeFooter, HomeHeader, VideosSection } from '@/components'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 
 export const jackarta = Plus_Jakarta_Sans({

@@ -4,7 +4,7 @@ import { Dialog } from '@headlessui/react'
 import ReactPlayer from 'react-player/lazy'
 import { Player } from '@lottiefiles/react-lottie-player'
 import { X } from 'phosphor-react'
-import { ButtonDownload } from '../ButtonDownload/ButtonDownload'
+import { ButtonDownload } from '@/components'
 import loadingAnimation from '@/assets/Loading-2.json'
 
 import { Plus_Jakarta_Sans } from 'next/font/google'
