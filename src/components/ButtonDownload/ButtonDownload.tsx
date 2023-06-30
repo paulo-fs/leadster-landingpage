@@ -1,8 +1,8 @@
-import { HTMLAttributes } from "react";
-import { IconCloud } from "./IconCloud";
+import { HTMLAttributes } from 'react'
+import { IconCloud } from './IconCloud'
 
 interface ButtonDownloadProps extends HTMLAttributes<HTMLButtonElement> {
-  type: 'Spreadsheet.xls' | 'Document.doc' | 'Presentation.ppt' | 'Folder.zip'
+  type: keyof typeof colorSchema
 }
 
 const colorSchema = {
