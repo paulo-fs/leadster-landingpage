@@ -1,5 +1,6 @@
-import { HTMLAttributes } from 'react'
+import { ComponentProps, ElementType, HTMLAttributes } from 'react'
 import { IconCloud } from './IconCloud'
+import { ButtonPage } from '../ButtonPage'
 
 interface ButtonDownloadProps extends HTMLAttributes<HTMLButtonElement> {
   type: keyof typeof colorSchema
@@ -49,3 +50,9 @@ export function ButtonDownload({type, ...props}: ButtonDownloadProps) {
     </button>
   )
 }
+
+export interface ButtonDownloadComponentProps extends ComponentProps<typeof ButtonDownload> {
+  as?: ElementType
+}
+
+ButtonPage.displayName = 'ButtonPage'

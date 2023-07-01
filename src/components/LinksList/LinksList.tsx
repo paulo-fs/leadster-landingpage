@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ComponentProps, ElementType } from 'react'
 
 interface LinksListProps {
   title: string
@@ -22,7 +23,7 @@ export function LinksList(props: LinksListProps) {
         {list.map((item, index) => {
           return (
             <li key={index} className='text-gray text-sm'>
-              <Link href={item.url}>
+              <Link href={item.url} className='hover:opacity-60'>
                 {item.text}
               </Link>
             </li>
@@ -32,3 +33,9 @@ export function LinksList(props: LinksListProps) {
     </div>
   )
 }
+
+export interface ListLinksComponentProps extends ComponentProps<typeof LinksList> {
+  as?: ElementType
+}
+
+LinksList.displayName = 'ListLinks'

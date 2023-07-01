@@ -1,9 +1,10 @@
-import { LinksList } from './LinksList/LinksList'
-import { LinkSocialMedia } from './LinksList/LinkSocialMedia/LinkSocialMedia'
 
-import {mainLinks, casesLinks, materialsLinks} from './LinksList/listsOfLinks'
+
+import {mainLinks, casesLinks, materialsLinks} from '@/components/LinksList/listsOfLinks'
 import Image from 'next/image'
 import animatedLogo from '@/assets/leadster_270.gif'
+import { LinksList } from '../LinksList/LinksList'
+import { LinkSocialMedia } from '../LinksList/LinkSocialMedia/LinkSocialMedia'
 
 export function HomeFooter() {
   return (

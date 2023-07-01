@@ -27,11 +27,12 @@ export function Pagination(componentProps: PaginationProps) {
       {pages.map(page => {
         return (
           <ButtonPage
-            page={page.toString()}
             isActive={activePage === page}
             onClick={() => changePage(page)}
             key={page}
-          />
+          >
+            {page.toString()}
+          </ButtonPage>
         )
       })}
     </div>

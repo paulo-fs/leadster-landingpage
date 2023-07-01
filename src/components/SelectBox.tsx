@@ -44,3 +44,6 @@ export function SelectBox() {
     </div>
   )
 }
+
+
+SelectBox.displayName = 'SelectBox'

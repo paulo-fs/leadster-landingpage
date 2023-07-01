@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { ComponentProps, Dispatch, ElementType, SetStateAction, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Dialog } from '@headlessui/react'
 import ReactPlayer from 'react-player/lazy'
@@ -102,3 +102,9 @@ export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps)
 
   return mounted ? createPortal(modalContent, document.body) : null
 }
+
+export interface VideoModalComponentProps extends ComponentProps<typeof VideoModal> {
+  as?: ElementType
+}
+
+VideoModal.displayName = 'CardVideo'

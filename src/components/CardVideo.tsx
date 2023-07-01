@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import videoThumbnail from '@/assets/thumbnail.png'
 import playIcon from '@/assets/playIcon.svg'
-import { HTMLAttributes } from 'react'
+import { ComponentProps, ElementType, HTMLAttributes } from 'react'
 
 interface CardVideoProps extends HTMLAttributes<HTMLDivElement> {
   title: string
@@ -24,3 +24,9 @@ export function CardVideo(compProps: CardVideoProps){
     </div>
   )
 }
+
+export interface CardVideoComponentProps extends ComponentProps<typeof CardVideo> {
+  as?: ElementType
+}
+
+CardVideo.displayName = 'CardVideo'
