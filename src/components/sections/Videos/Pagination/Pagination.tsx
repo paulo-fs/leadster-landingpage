@@ -27,6 +27,7 @@ export function Pagination(componentProps: PaginationProps) {
       {pages.map(page => {
         return (
           <ButtonPage
+            id={`pagination${page}`}
             isActive={activePage === page}
             onClick={() => changePage(page)}
             key={page}

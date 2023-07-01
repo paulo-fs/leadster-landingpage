@@ -36,7 +36,7 @@ export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps)
         <Dialog.Panel  className="mx-auto w-full max-w-xl h-full sm:h-auto sm:rounded-2xl bg-white">
 
           <div className='absolute w-full max-w-xl group'>
-            <button  className='absolute top-4 right-5 rounded-full p-2 bg-white group-hover:bg-blue-buttonMedium transition'
+            <button id='close-button' className='absolute top-4 right-5 rounded-full p-2 bg-white group-hover:bg-blue-buttonMedium transition'
               onClick={() => handleModal(false)}
             >
               <X size={24}  />
@@ -49,7 +49,7 @@ export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps)
           </Dialog.Title>
 
 
-          <div className="w-full relative z-50">
+          <div id='video-player-container' className="w-full relative z-50">
             <ReactPlayer
               url={videoInfos.url}
               width='100%'
@@ -58,7 +58,7 @@ export function VideoModal({ handleModal, isOpen, videoInfos }: VideoModalProps)
               onReady={() => setIsLoading(false)}
             />
             {isLoading && (
-              <div className="fixed top-24 left-6 sm:inset-64">
+              <div id='loading-video' className="fixed top-24 left-6 sm:inset-64">
                 <Player
                   autoplay
                   loop

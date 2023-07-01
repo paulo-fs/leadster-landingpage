@@ -30,12 +30,12 @@ export function VideosSection() {
       {isOpenModal && <VideoModal videoInfos={videoInfos} isOpen={isOpenModal} handleModal={handleModal} />}
 
       <div className='border-y border-gray border-opacity-70 py-8 sm:py-12 lg:py-16 my-4 md:my-8 lg:my-10'>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8'>
+        <div id='videos-container' className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8'>
           {allVideos && (filteredVideos || allVideos)
             .slice((page - 1) * videosPerPage, (page - 1) * videosPerPage + videosPerPage)
             .map((item) => {
               return (
-                <CardVideo key={item.id} title={item.title}
+                <CardVideo id={item.id+item.topic} key={item.id} title={item.title}
                   onClick={() => handleSetVideoModalInfos({
                     title: item.title,
                     description: null,
