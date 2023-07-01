@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import { ButtonHTMLAttributes, ComponentProps, ElementType, ReactNode } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean
@@ -28,3 +28,9 @@ export function Button(buttonProps: ButtonProps) {
     </button>
   )
 }
+
+export interface ButtonComponentProps extends ComponentProps<typeof Button> {
+  as?: ElementType
+}
+
+Button.displayName = 'Button'
