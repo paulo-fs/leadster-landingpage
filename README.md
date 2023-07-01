@@ -2,6 +2,8 @@
 
 ## Decisions
 
+When starting the test, the first thing I did was analyze the requirements and the provided material. The material included the project design, and before starting, I examined the entire design to understand its structure, its components, and to extract the colors.
+
 - Tailwind
   Despite the test requesting the use of Styled Components, I decided to use Tailwind due to its greater compatibility with recent versions of Next, its performance, and its practicality.
 
@@ -29,6 +31,14 @@ I used the 'src' folder to put everything related to the project itself. I used 
 - store: Store and manage data in the application, as well as some important states.
 
 - dataTypes: Save the data types used in the application.
+
+# Deploy
+
+<ul>
+  <li>
+    <a href="https://leadster-landingpage.vercel.app/">Move</a>
+  </li>
+</ul>
 
 # Instructions
 
@@ -86,11 +96,3 @@ yarn cypress open
 </ul>
 
 Open in the browser on http://localhost:3000
-
-<!-- # Deploy
-
-<ul>
-  <li>
-    <a href="https://naty-challenge-move.vercel.app/">Move</a>
-  </li>
-</ul> -->
