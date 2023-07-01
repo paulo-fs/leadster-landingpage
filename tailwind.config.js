@@ -1,3 +1,5 @@
+import { colors } from './src/styles/tokens/colors'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,31 +13,31 @@ module.exports = {
     },
     colors: {
       blue: {
-        main: '#0077F4',
-        light: '#E6F3FF',
-        background: '#F0F8FF',
-        buttonLight: '#C2E6FF',
-        buttonMedium: '#A1D9FF',
-        buttonDark: '#0077F4',
+        main: colors.blueMain,
+        light: colors.blueLight,
+        background: colors.blueBackground,
+        buttonLight: colors.blueButtonLight,
+        buttonMedium: colors.blueButtonMedium,
+        buttonDark: colors.blueButtonDark,
       },
       green: {
-        buttonLight: '#C2F4EA',
-        buttonMedium: '#9FEFDF',
-        buttonDark: '#00AE7F',
+        buttonLight: colors.greenButtonLight,
+        buttonMedium: colors.greenButtonMedium,
+        buttonDark: colors.greenButtonDark,
       },
       yellow: {
-        buttonLight: '#FFF8D0',
-        buttonMedium: '#FFF1A0',
-        buttonDark: '#A68E1C',
+        buttonLight: colors.yellowButtonLight,
+        buttonMedium: colors.yellowButtonMedium,
+        buttonDark: colors.yellowButtonDark,
       },
       grayButton: {
-        buttonLight: '#E8EEF3',
-        buttonMedium: '#D0DEE7',
-        buttonDark: '#77848C',
+        buttonLight: colors.grayButtonLight,
+        buttonMedium: colors.grayButtonMedium,
+        buttonDark: colors.grayButtonDark,
       },
-      black: '#1C3C50',
-      gray: '#858da8',
-      white: '#fff',
+      black: colors.black,
+      gray: colors.gray,
+      white: colors.white,
     },
     extend: {
       fontSize: {
@@ -61,7 +63,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@headlessui/tailwindcss')({ prefix: 'ui' })
-  ],
+  plugins: [require('@headlessui/tailwindcss')({ prefix: 'ui' })],
 }
