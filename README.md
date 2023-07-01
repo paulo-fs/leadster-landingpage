@@ -1,5 +1,7 @@
 # About the test
 
+![Project image](image.png)
+
 ## Decisions
 
 When starting the test, the first thing I did was analyze the requirements and the provided material. The material included the project design, and before starting, I examined the entire design to understand its structure, its components, and to extract the colors.
@@ -36,7 +38,7 @@ I used the 'src' folder to put everything related to the project itself. I used 
 
 <ul>
   <li>
-    <a href="https://leadster-landingpage.vercel.app/">Move</a>
+    <a href="https://leadster-landingpage.vercel.app/">Leadster - click to visit the page</a>
   </li>
 </ul>
 
