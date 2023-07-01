@@ -1,38 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About the test
 
-## Getting Started
+## Decisions
 
-First, run the development server:
+- Tailwind
+  Despite the test requesting the use of Styled Components, I decided to use Tailwind due to its greater compatibility with recent versions of Next, its performance, and its practicality.
+
+- Storybook
+  I added Storybook to document the components and also included a plugin to test the accessibility of the components. With this test, we have insights into possible improvements to make the project more accessible to people with disabilities.
+
+- Cypress
+  Since it is a landing page, there wasn't much to test, so I used Cypress to test some functionalities of the page. I wrote tests with Cypress to test the Videos section.
+
+- Video data
+  I created an endpoint to serve the application data, simulating that this data would come from an external source, an API.
+
+## Code organization
+
+I aimed to use clean code concepts to facilitate code readability and maintenance.
+
+I used the 'src' folder to put everything related to the project itself. I used various subfolders to better separate the code according to its function, in addition to the ones that are already standard in Next, for example:
+
+- helpers: Small functions that can be reused in different parts of the code.
+
+- components: Where the components are located. The application was divided into small components to compose the interface. Within more complex components, the code containing logic was saved in another file called 'controller', aiming to separate the visual part of the component from its logical part.
+
+- services: This directory houses integrations with external services and the corresponding requests.
+
+- store: Store and manage data in the application, as well as some important states.
+
+- dataTypes: Save the data types used in the application.
+
+# Instructions
+
+This project is using Yarn as package manager.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/paulo-fs/leadster-landingpage.git
+cd leadster-landingpage
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Wait the instalation complete, then:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- First, run the server:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+yarn build
+yarn start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- To run storybook:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn storybook
+```
 
-## Learn More
+- To run Cypress:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn cypress open
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Technologies and Libraries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<ul>
+  <li>Next</li>
+  <li>React</li>
+  <li>Tailwind</li>
+  <li>StoryBook</li>
+  <li>Cypress</li>
+  <li>Axios</li>
+</ul>
 
-## Deploy on Vercel
+# Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<ul>
+  <li>Git</li>
+  <li>Node</li>
+</ul>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Note
+
+<ul>
+  <li>Remember to change variables in a '.env.local'</li>
+</ul>
+
+Open in the browser on http://localhost:3000
+
+<!-- # Deploy
+
+<ul>
+  <li>
+    <a href="https://naty-challenge-move.vercel.app/">Move</a>
+  </li>
+</ul> -->
