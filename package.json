@@ -45,6 +45,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "cypress": "^12.16.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-storybook": "^0.6.12",
     "storybook": "^7.0.24"
