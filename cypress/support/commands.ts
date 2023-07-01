@@ -12,14 +12,10 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+Cypress.Commands.add('visitHome', () => {
+  cy.viewport(1280, 720)
+  cy.visit('http://localhost:3000')
+})
 //
 //
 // -- This will overwrite an existing command --
